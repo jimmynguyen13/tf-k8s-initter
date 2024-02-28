@@ -3,7 +3,7 @@ echo "install-ingress-controller.sh"
 helm repo add  nginx-stable https://helm.nginx.com/stable
 helm repo update
 
-cat << FOE >> ./ingress-controller.viettq.yaml
+cat << FOE >> ./ingress-controller.thinhnp.yaml
 controller:
   ingressClass:  
     name: nginx
@@ -24,5 +24,5 @@ controller:
       nodePort: 30443
       targetPort: 443 
 FOE
-echo "helm -n ingress-controller install ingress-controller -f ./ingress-controller.viettq.yaml nginx-stable/nginx-ingress --version 1.1.2 --create-namespace"
-helm -n ingress-controller install ingress-controller -f ./ingress-controller.viettq.yaml nginx-stable/nginx-ingress --version 1.1.2 --create-namespace
+echo "helm -n ingress-controller install ingress-controller -f ./ingress-controller.thinhnp.yaml nginx-stable/nginx-ingress --version 1.1.2 --create-namespace"
+helm -n ingress-controller install ingress-controller -f ./ingress-controller.thinhnp.yaml nginx-stable/nginx-ingress --version 1.1.2 --create-namespace

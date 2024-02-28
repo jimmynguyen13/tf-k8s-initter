@@ -39,7 +39,7 @@ sudo sed -i "s/MASTER_IP/$privateip/g" /etc/haproxy/haproxy.cfg
 sudo tail -25 /etc/haproxy/haproxy.cfg
 
 sudo mkdir -p /etc/haproxy/certs
-sudo tee /etc/haproxy/certs/viettq.pem > /dev/null << EOF
+sudo tee /etc/haproxy/certs/thinhnp.pem > /dev/null << EOF
 -----BEGIN RSA PRIVATE KEY-----
 MIIEowIBAAKCAQEA3a0FCeoWRfRxR1MXPwPHenQfcTbAdALtYmjjchPnnvwx5Y+x
 unfMvGMLFOcynL4/a2FO8QBNzbRBDhlQGDHchCBVrP4IhZYP6ByQZuwAKgPpfPLs

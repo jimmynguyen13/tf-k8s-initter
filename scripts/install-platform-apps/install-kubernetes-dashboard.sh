@@ -310,7 +310,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: dashboard.viettq.com
+  - host: dashboard.thinhnp.com
     http:
       paths:
       - backend:
